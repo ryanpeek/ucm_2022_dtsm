@@ -1,0 +1,35 @@
+---
+title: "ENGR 180 2022 Spatial Analysis and Modeling"
+author: "Dr. R. Peek"
+format: 
+  revealjs:
+    footer: "[ryanpeek.org](https://ryanpeek.org/)&nbsp;&nbsp;&nbsp;"
+    theme: [night]
+    preview-links: auto
+    chalkboard: 
+      boardmarker-width: 5
+from: markdown+emoji
+header-includes: |
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        rel="stylesheet"/>
+execute:
+  echo: true
+---
+
+## ENG180: Spatial Modeling and 
+
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
