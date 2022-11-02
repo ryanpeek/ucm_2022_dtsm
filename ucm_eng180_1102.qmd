@@ -1,5 +1,5 @@
 ---
-title: "ENGR 180 2022 Spatial Analysis and Modeling"
+title: "ENGR-180 2022: Drought & Data Flows"
 author: "Dr. R. Peek"
 format: 
   revealjs:
@@ -9,19 +9,18 @@ format:
     preview-links: auto
     chalkboard: 
       boardmarker-width: 3
-from: markdown+emoji
-header-includes: |
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        rel="stylesheet"/>
+title-slide-attributes:
+  data-background-image: "img/RCNX0009.JPG"
+  data-background-size: cover
+  data-background-opacity: "0.5"
 execute:
   echo: true
+editor_options: 
+  chunk_output_type: console
 ---
 
-## ENG180: Drought and Data 
 
-
-
-## Data, Drought, and Flow
+## Drought & Data Flow
 
 ::::: {.columns}
 
@@ -34,7 +33,7 @@ execute:
 ::: {.incremental}
 - Overview
 - Case Studies 
-- Code Nougats
+- Questions
 :::
 
 :::
@@ -45,7 +44,7 @@ execute:
 
 ::: {.fragment}
 
-### Like this Package
+### Sometimes Code!
 
 ```{r}
 #| echo: true
@@ -63,15 +62,26 @@ nhdplusTools::get_nldi_basin()
 
 :::::
 
-## Plots
+## Drought in CA
 
 ::: {.r-stack}
-![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="700"}
+![](https://droughtmonitor.unl.edu/data/png/20140930/20140930_west_trd.png){.fragment width="840"}
 
-![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="600"}
+![](https://droughtmonitor.unl.edu/data/png/20150929/20150929_west_trd.png){.fragment width="840"}
 
-![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="500"}
+![](https://droughtmonitor.unl.edu/data/png/20160927/20160927_west_trd.png){.fragment width="840"}
+
+![](https://droughtmonitor.unl.edu/data/png/20211005/20211005_west_trd.png){.fragment width="840"}
+
+![](https://droughtmonitor.unl.edu/data/png/20221004/20221004_west_trd.png){.fragment width="840"}
+
 :::
+
+## Data Viz Long Term
+
+*Adapted from Cédric Scherer and Georgios Karamanis*
+
+## {background-image="img/drought_bars_facet_var_20221102.png" background-size="contain" background-color="white"}
 
 ## Study Area & System {background-image="figs/EDDI_ETrs_09mn_20221024.png" background-size="cover" background-color="gray20"}
 :::{.incremental}
@@ -80,6 +90,21 @@ nhdplusTools::get_nldi_basin()
  - Add sociopolitical boundaries...
  - ...many places *don't have basic data*!
 :::
+
+## On the Ground
+
+
+
+## Data Sources
+
+ - Many options:
+  - Old filing cabinets and forms
+  - [Intermountain-west Dashboard](https://wwa.colorado.edu/resources/intermountain-west-climate-dashboard)
+  - [Drought MultiTool](https://unldroughtcenter.maps.arcgis.com/apps/instant/portfolio/index.html?appid=a7fda0a39b6449aa907ac4537baa67c3)
+  - Earth Engine
+  - [NASA climate change](https://climate.nasa.gov/)
+  - many more
+
 ## Types of Spatial Analysis
 
 :::{.incremental}
@@ -91,6 +116,7 @@ nhdplusTools::get_nldi_basin()
  - Meterological data
 
 :::
+
 ## How do we parse these data?
 
 :::{.incremental}
@@ -102,20 +128,35 @@ nhdplusTools::get_nldi_basin()
  - Best Practices?
 :::
 
+## [EDDI](https://psl.noaa.gov/eddi/) Metric
+
+Evaporative Drought Demand Index
+
+![](figs/EDDI_ETrs_09mn_20221024.png)
+
 ## Processing and Analytics 
 
-How does one process your type of data? What are the analytical techniques and results from your work?
+- Always always know the provenance of data
+- Analysis and re-analysis
+- Telling stories with data...
+
+## Modeling
+
+- Boosted Regression Tree / Random forests
+- GLM
+- Bayesian
+- GAMs (non-linear)
 
 ## Validating Uncertainty
 
  - embrace the unknown
  - doing nothing is a still a decision
- 
-How do you calibrate and validate your models? How does one measure and communicate uncertainty?
+ - really important to communicate uncertainty but still do things
  
 ## Cool Data Viz
 
-What are the cool data visualizations from your research, both spatial and non-spatial? How did you make them?
+ - [Mr Rogers Colors](https://github.com/ryanpeek/mr_rogers_colors/raw/main/output/mr_rogers_sweater_color_palette.jpg)
+ - [GSOD Temps](https://ryanpeek.org/2019-04-29-spatial-joins-in-r/)
 
 ## Other Data Bits
 

@@ -5,5 +5,5 @@
 *html
 *.DS_Store
 _targets/
-*demo_raster_eddi_files/*
+figs/demo_raster_eddi_files/*
 *_files/*
