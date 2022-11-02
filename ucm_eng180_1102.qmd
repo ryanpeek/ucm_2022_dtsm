@@ -77,6 +77,32 @@ nhdplusTools::get_nldi_basin()
 
 :::
 
+## On the Ground
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+![](img/toad_dried.jpeg)
+
+:::
+
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+![](img/IMG_6343.jpg)
+
+:::
+
+::::
+
+:::::
+
 ## Data Viz Long Term
 
 *Adapted from Cédric Scherer and Georgios Karamanis*
@@ -90,10 +116,6 @@ nhdplusTools::get_nldi_basin()
  - Add sociopolitical boundaries...
  - ...many places *don't have basic data*!
 :::
-
-## On the Ground
-
-
 
 ## Data Sources
 
@@ -147,21 +169,67 @@ Evaporative Drought Demand Index
 - Bayesian
 - GAMs (non-linear)
 
+## Can Model Anything...but should we?
+
+::: {.r-stack}
+ 
+![](img/tmap_turkey_facet.png){.fragment width="740"}
+ 
+![](img/correlation_btwn_turkeys_asthma.jpg){.fragment width="840"}
+:::
+
 ## Validating Uncertainty
 
  - embrace the unknown
  - doing nothing is a still a decision
  - really important to communicate uncertainty but still do things
+
+## Visualizing Data 
+
+ - What is the point of the visualization? What story are we telling?
  
-## Cool Data Viz
+## {background-image="img/fig1ABC_sfeel_temps.png" background-size="contain" background-color="white"}
+
+## {background-image="img/yolo_gee_example.jpg" background-size="contain"}
+
+## {background-image="img/knoxville_pond_connectivity_using_TRI_12_ponds.png" background-size="contain"}
+
+## Which Tells you More?
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+![](img/turtleshell.jpeg)
+
+:::
+
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+![](img/figure_drought_periods.png)
+
+:::
+
+::::
+
+:::::
+
+
+## Fun Data Viz
 
  - [Mr Rogers Colors](https://github.com/ryanpeek/mr_rogers_colors/raw/main/output/mr_rogers_sweater_color_palette.jpg)
  - [GSOD Temps](https://ryanpeek.org/2019-04-29-spatial-joins-in-r/)
 
-## Other Data Bits
+## Questions and Discussion
 
-What are the other data that one would need to more effectively manage your study system from a suitability analysis perspective?
-
-## Outcomes and Goals
-
-What are the management outcomes from your work? What good does it do for society?
+ - General goals and outcomes of work
+ - Thoughts?
+ 
+ 
+## Thanks
