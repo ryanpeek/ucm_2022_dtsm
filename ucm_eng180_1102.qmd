@@ -4,10 +4,11 @@ author: "Dr. R. Peek"
 format: 
   revealjs:
     footer: "[ryanpeek.org](https://ryanpeek.org/)&nbsp;&nbsp;&nbsp;"
+    logo: "img/flare_helix.png"
     theme: [night]
     preview-links: auto
     chalkboard: 
-      boardmarker-width: 5
+      boardmarker-width: 3
 from: markdown+emoji
 header-includes: |
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -16,20 +17,110 @@ execute:
   echo: true
 ---
 
-## ENG180: Spatial Modeling and 
+## ENG180: Drought and Data 
 
 
-## Bullets
 
-When you click the **Render** button a document will be generated that includes:
+## Data, Drought, and Flow
 
--   Content authored with markdown
--   Output from executable code
+::::: {.columns}
 
-## Code
+:::: {.column width="50%"}
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+::: {.fragment}
+
+### General Outline
+
+::: {.incremental}
+- Overview
+- Case Studies 
+- Code Nougats
+:::
+
+:::
+
+::::
+
+:::: {.column width="50%"}
+
+::: {.fragment}
+
+### Like this Package
 
 ```{r}
-1 + 1
+#| echo: true
+#| eval: false
+library(nhdplusTools)
+nhdplusTools::get_gagesII()
+nhdplusTools::get_nldi_basin()
+
 ```
+
+
+:::
+
+::::
+
+:::::
+
+## Plots
+
+::: {.r-stack}
+![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="700"}
+
+![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="600"}
+
+![](figs/EDDI_ETrs_09mn_20221024.png){.fragment width="500"}
+:::
+
+## Study Area & System {background-image="figs/EDDI_ETrs_09mn_20221024.png" background-size="cover" background-color="gray20"}
+:::{.incremental}
+ - California [**is big**]{.fragment .highlight-blue}
+ - Covering and monitoring a highly diverse landscape is hard
+ - Add sociopolitical boundaries...
+ - ...many places *don't have basic data*!
+:::
+## Types of Spatial Analysis
+
+:::{.incremental}
+ - Remote sensing
+ - Field data
+ - Genomic Data
+ - eDNA
+ - Historical observations
+ - Meterological data
+
+:::
+## How do we parse these data?
+
+:::{.incremental}
+ - Python >>> workflows with `snakemake`
+ - R >>> workflows with `targets` 
+ - Bash >>> basic script workflows
+ - Excel >>> workflows?
+ <br>
+ - Best Practices?
+:::
+
+## Processing and Analytics 
+
+How does one process your type of data? What are the analytical techniques and results from your work?
+
+## Validating Uncertainty
+
+ - embrace the unknown
+ - doing nothing is a still a decision
+ 
+How do you calibrate and validate your models? How does one measure and communicate uncertainty?
+ 
+## Cool Data Viz
+
+What are the cool data visualizations from your research, both spatial and non-spatial? How did you make them?
+
+## Other Data Bits
+
+What are the other data that one would need to more effectively manage your study system from a suitability analysis perspective?
+
+## Outcomes and Goals
+
+What are the management outcomes from your work? What good does it do for society?
